@@ -20,12 +20,12 @@ services:
     ports:
       - "0.0.0.0:4000:4000"
     volumes:
-      - ./node:/usr/src/app
+      - node_server_data:/usr/src/app
     networks:
       - backend_network
     tty: true
     entrypoint: dockerize -wait tcp://database:3306 -timeout 30s && docker-entrypoint.sh
-    command: npm run dev
+    command: node src/server.js
 
   nginx:
     container_name: nginx
@@ -40,3 +40,7 @@ services:
 
 networks:
   backend_network:
+
+
+volumes:
+  node_server_data:
