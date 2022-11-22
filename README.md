@@ -13,6 +13,7 @@
 - [Overview](#overview)
   - [Built With](#built-with)
   - [Folder Structure](#folder-structure)
+  - [Environment variables](#environment-variables)
 - [How to use](#how-to-use)
 - [Contact](#contact)
 
