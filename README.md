@@ -37,24 +37,24 @@ The challenge is:
 ### Folder Structure
 ```sh
 .
-├── .github/                   # assets for documentation
+├── .github/                      # assets for documentation
 ├── mysql/
-│   ├── .env                  # environment variables
+│   └── .env                      # environment variables
 ├── nginx/
-│   ├── nginx.conf            # nginx configuration file
+│   └── nginx.conf                # nginx configuration file
 ├── node/          
 │   ├── src/         
 │   │   ├── config/
-          ├── db.config.json  # database config file                              
-│   │   ├── views/            # ejs files for render a view
-│   │   └── app.js            # the main file on application
-│   │   └── routes.js         # routes of application
-│   │   └── server.js         # file for listening server port
-│   ├── Dockerfile            # dockerfile for nodejs 
-│   ├── package.json          # libraries and scripts for the project
-├── .gitgnore                 # control of versioning files
-├── docker-compose            # the file responsible for create containers applications
-└── README.md                 # documentaion for github.
+│   │   │   └── db.config.json    # database config file 
+│   │   ├── views/                # ejs files for render a view
+│   │   ├── app.js                # the main file on application
+│   │   ├── routes.js             # routes of application
+│   │   └── server.js             # file for listening server port
+│   ├── Dockerfile                # dockerfile for nodejs 
+│   └── package.json              # libraries and scripts for the project
+├── .gitgnore                     # control of versioning files
+├── docker-compose                # the file responsible for create containers applications
+└── README.md                     # documentaion for github.
 
 
 ```
@@ -64,8 +64,8 @@ Variáveis de ambiente utilizadas pela aplicação:
 
 | Name | Description | Default value |
 | ---  | --- | --- | 
-| PORT | exposed por for application | 4000 |
-| MYSQL_DATABASE | MySQL database name | nodejs |
+| PORT | exposed port for application | 4000 |
+| MYSQL_DATABASE | MySQL database name | nodedb |
 | MYSQL_USER | MySQL database user | sandro |
 | MYSQL_PASSWORD | MySQL database password | 123456 |
 
